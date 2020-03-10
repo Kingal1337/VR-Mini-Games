@@ -6,16 +6,20 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class TempVRTest : MonoBehaviour
 {
     public void addOutline(XRBaseInteractable xr) {
-        Material[] mats = xr.gameObject.GetComponent<Renderer>().materials;
-        for (int i = 0; i < mats.Length; i++) {
-            mats[i].SetFloat("_Outline", .1f);
+        if (xr.gameObject.GetComponent<Renderer>() != null) {
+            Material[] mats = xr.gameObject.GetComponent<Renderer>().materials;
+            for (int i = 0; i < mats.Length; i++) {
+                mats[i].SetFloat("_Outline", .1f);
+            }
         }
     }
     
     public void removeOutline(XRBaseInteractable xr) {
-        Material[] mats = xr.gameObject.GetComponent<Renderer>().materials;
-        for (int i = 0; i < mats.Length; i++) {
-            mats[i].SetFloat("_Outline", 0f);
+        if (xr.gameObject.GetComponent<Renderer>() != null) {
+            Material[] mats = xr.gameObject.GetComponent<Renderer>().materials;
+            for (int i = 0; i < mats.Length; i++) {
+                mats[i].SetFloat("_Outline", 0f);
+            }
         }
     }
 

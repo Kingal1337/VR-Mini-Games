@@ -12,21 +12,18 @@ public class XRRigMoveable : MonoBehaviour
     public float speed = 5f;
 
     public Camera camera;//needed for rotation
-    public XRController controller;
+    public XRController controller;//which controller that is able to move the XRRig
 
     public static bool AlmostEquals(float float1, float float2, float precision) {
         return (Math.Abs(float1 - float2) <= precision);
     }
 
     void Start() {
-        rotationOfCam = new GameObject().transform;
+        rotationOfCam = new GameObject().transform;//Creates an empty transform to keep track of transform.forward
     }
 
-    // Update is called once per frame
-    void FixedUpdate() {
-        //transform.parent.position = transform.position - transform.localposition;
-        
-        rotationOfCam.eulerAngles = new Vector3(rotationOfCam.eulerAngles.x, camera.transform.eulerAngles.y, rotationOfCam.eulerAngles.z) - transform.eulerAngles;
+    void FixedUpdate() {        
+        rotationOfCam.eulerAngles = new Vector3(rotationOfCam.eulerAngles.x, camera.transform.eulerAngles.y, rotationOfCam.eulerAngles.z) - transform.eulerAngles; 
 
         if (controller != null) {
             InputFeatureUsage<Vector2> feature = CommonUsages.primary2DAxis;
