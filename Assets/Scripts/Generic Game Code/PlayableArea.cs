@@ -14,10 +14,15 @@ public class PlayableArea : MonoBehaviour {
     [Tooltip("Instead of dragging play objects 1 at a time, you can drag the parent of all the PlayObjects")]
     public GameObject parentOfAllPlayObjects;
 
-    private List<PlayObject> objectsOutOfBounds = new List<PlayObject>();
+    private List<PlayObject> objectsInBounds = new List<PlayObject>();
+    public List<PlayObject> ObjectsInBounds { 
+        get { 
+            return objectsInBounds; 
+        }
+    }
 
     [Tooltip("The time objects can stay outside of the Play Area before they are teleported back to the playarea. (In Seconds)")]
-    public float outOfBoundsTime = 2f;//should be 10 seconds
+    public float outOfBoundsTime = 2f;
 
     [Tooltip("Where the objects will teleport to if they are out of bounds")]
     public Transform teleportLocation;
@@ -27,26 +32,32 @@ public class PlayableArea : MonoBehaviour {
     {
         foreach (Transform child in parentOfAllPlayObjects.transform) {
             GameObject gameObject = child.gameObject;
-            PlayObject component = gameObject.GetComponent<PlayObject>();
-            if (component != null) {
-                if (!objects.Contains(component)) {
-                    objects.Add(component);
+            PlayObject playObject = gameObject.GetComponent<PlayObject>();
+            if (playObject != null) {
+                if (!objects.Contains(playObject)) {
+                    objects.Add(playObject);
+                    updateObjectInBounds(playObject);
                 }
             }
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
+    public void updateObjectInBounds(PlayObject playObject) {
+        if (!playObject.OutOfBounds) {
+            if (!objectsInBounds.Contains(playObject)) { 
+                objectsInBounds.Add(playObject);
+            }
+        }
+        else {
+            objectsInBounds.Remove(playObject);
+        }
     }
 
     void OnTriggerEnter(Collider collider) {
         PlayObject playObject = collider.gameObject.GetComponent<PlayObject>();
         if (playObject != null) {
             if (objects.Contains(playObject)) {
-                playObject.outOfBounds = false;
+                playObject.OutOfBounds = false;
                 playObject.timeOutOfBounds = 0;
             }
         }
@@ -56,7 +67,7 @@ public class PlayableArea : MonoBehaviour {
         PlayObject playObject = collider.gameObject.GetComponent<PlayObject>();
         if (playObject != null) {
             if (objects.Contains(playObject)) {
-                playObject.outOfBounds = true;
+                playObject.OutOfBounds = true;
             }
         }
     }

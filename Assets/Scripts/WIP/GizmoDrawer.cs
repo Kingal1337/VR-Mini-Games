@@ -16,7 +16,7 @@ public class GizmoDrawer : MonoBehaviour
 
     private void OnRenderObject() {
         Vector3 newBox = new Vector3(box.size.x * transform.lossyScale.x, box.size.y * transform.lossyScale.y, box.size.z * transform.lossyScale.z);
-        Gizmos.Cube(transform.position, transform.rotation, newBox);
+        Gizmos.Cube(box.bounds.center, transform.rotation, newBox);
     }
 
     //Update is called once per frame
