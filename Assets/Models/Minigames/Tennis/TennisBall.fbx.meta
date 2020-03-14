@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: 84d2da75534ec584fb7d19c75032b865
+ModelImporter:
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      74: -4785249564963112344
+    second: Ball|Ball|Take 001|BaseLayer
+  - first:
+      74: -4562697608169867383
+    second: Ball|Omni001|Take 001|BaseLayer
+  - first:
+      74: -509186364052128575
+    second: Ball|Omni002|Take 001|BaseLayer
+  - first:
+      74: 7205653659900694302
+    second: Ball|Omni003|Take 001|BaseLayer
+  - first:
+      74: 5097261318113037194
+    second: Ball|Omni004|Take 001|BaseLayer
+  - first:
+      74: 3079985746176758280
+    second: Ball|Omni005|Take 001|BaseLayer
+  - first:
+      74: -3696933196366900434
+    second: Ball|Omni006|Take 001|BaseLayer
+  - first:
+      74: 4456850160018492362
+    second: Ball|Omni007|Take 001|BaseLayer
+  - first:
+      74: 3645519178262465179
+    second: Ball|Omni008|Take 001|BaseLayer
+  - first:
+      74: 7069862158303048062
+    second: Ball|Omni009|Take 001|BaseLayer
+  - first:
+      74: 5566855492999656113
+    second: Ball|Omni010|Take 001|BaseLayer
+  - first:
+      74: -7459115078165990219
+    second: Ball|Omni011|Take 001|BaseLayer
+  - first:
+      74: -8523882818163982746
+    second: Ball|Omni012|Take 001|BaseLayer
+  - first:
+      74: 3576264006132804267
+    second: Ball|Omni013|Take 001|BaseLayer
+  - first:
+      74: 96704742188538863
+    second: Ball|Omni014|Take 001|BaseLayer
+  - first:
+      74: 4031510429773633460
+    second: Ball|Omni015|Take 001|BaseLayer
+  - first:
+      74: -1907807813027861475
+    second: Ball|Omni016|Take 001|BaseLayer
+  - first:
+      74: 5981763803672738476
+    second: Ball|Omni017|Take 001|BaseLayer
+  - first:
+      74: -8194450548339685073
+    second: Ball|Omni018|Take 001|BaseLayer
+  - first:
+      74: 2895158527867567648
+    second: Ball|Omni019|Take 001|BaseLayer
+  - first:
+      74: -2130690864657464671
+    second: Ball|Omni020|Take 001|BaseLayer
+  - first:
+      74: 6945163873662626056
+    second: Ball|Omni021|Take 001|BaseLayer
+  - first:
+      74: 9172523766602521065
+    second: Ball|Omni022|Take 001|BaseLayer
+  - first:
+      74: -9104064115870762208
+    second: Ball|Omni023|Take 001|BaseLayer
+  - first:
+      74: 1251793005427744819
+    second: Ball|Omni024|Take 001|BaseLayer
+  - first:
+      74: -1865907426785707040
+    second: Ball|Omni025|Take 001|BaseLayer
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
