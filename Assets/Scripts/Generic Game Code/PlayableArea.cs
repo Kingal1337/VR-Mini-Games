@@ -33,7 +33,7 @@ public class PlayableArea : MonoBehaviour {
         foreach (Transform child in parentOfAllPlayObjects.transform) {
             GameObject gameObject = child.gameObject;
             PlayObject playObject = gameObject.GetComponent<PlayObject>();
-            if (playObject != null) {
+            if (playObject != null && playObject.gameObject.activeSelf) {
                 if (!objects.Contains(playObject)) {
                     objects.Add(playObject);
                     updateObjectInBounds(playObject);

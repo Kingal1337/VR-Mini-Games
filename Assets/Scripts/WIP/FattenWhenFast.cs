@@ -55,8 +55,6 @@ public class FattenWhenFast : MonoBehaviour
             float time = map(minSpeed, maxSpeed, minValueOnCurve, maxValueOnCurve, speed);
             float sizeToResizeBy = sizeCurve.Evaluate(time);
 
-            print(time+" "+minSpeed + " "+maxSpeed+" "+minValueOnCurve + " "+maxValueOnCurve);
-
             Vector3 colliderSize = boxCollider.size;
             boxCollider.size = new Vector3(
                     axis == Axis.X_Axis ? sizeToResizeBy : colliderSize.x,

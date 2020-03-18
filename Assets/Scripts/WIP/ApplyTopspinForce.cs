@@ -4,21 +4,20 @@ using UnityEngine;
 
 public class ApplyTopspinForce : MonoBehaviour
 {
-    public Rigidbody rb;
+    private Rigidbody rigidBody;
 
-    public GameObject gameObject;
+    public GameObject racket;
     // Start is called before the first frame update
     void Start()
     {
-        
+        rigidBody = GetComponent<Rigidbody>();
     }
 
     private void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject == gameObject) {
-            print("Hello");
-            rb.AddTorque(Vector3.up * 10, ForceMode.Force);
-
-            //rb.AddTorque(collision.gameObject.GetComponent<Rigidbody>().velocity, ForceMode.Force);
+        if (collision.gameObject == racket) {
+            if (rigidBody != null) {
+                rigidBody.AddTorque(Vector3.up * 10, ForceMode.Force);
+            }
         }
     }
 }

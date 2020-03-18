@@ -5,13 +5,16 @@ using UnityEngine;
 public class TennisBallShooterScript : MonoBehaviour {
     private float currentTimeToShoot;//the time until the ball will shoot;
 
-    private float timeToReload = 2f;//the time to wait before reloading
+    public float timeToReload = 2f;//the time to wait before reloading
     private float currentTimeToReload;//the time until the ball will get reloaded after the ball is shot
 
     private GameObject tennisBall;//Tennis ball that is about to be fired
 
     public bool isOn;
-    public float timeTillShoot = 5;//in seconds
+
+    public float minTimeToShoot = 2;//in seconds
+    public float maxTimeToShoot = 5;//in seconds
+    private float timeToShoot = 2;
 
     public float force = 1000f;
 
@@ -25,6 +28,10 @@ public class TennisBallShooterScript : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         ReloadTennisBall();
+    }
+
+    private void CalculateTimeToShoot() {
+        timeToShoot = Random.Range(minTimeToShoot, maxTimeToShoot);
     }
 
     // Update is called once per frame
@@ -41,7 +48,7 @@ public class TennisBallShooterScript : MonoBehaviour {
             }
             else {
                 currentTimeToShoot += Time.deltaTime;
-                if (currentTimeToShoot >= timeTillShoot) {
+                if (currentTimeToShoot >= timeToShoot) {
                     currentTimeToShoot = 0;
                     ShootTennisBall();
                 }
@@ -70,6 +77,7 @@ public class TennisBallShooterScript : MonoBehaviour {
                 currentTimeToShoot = 0;
                 tennisBall = allTennisBalls[0].gameObject;
                 tennisBall.transform.position = tennisBallOrigin.position;
+                CalculateTimeToShoot();
             }
         }
     }
