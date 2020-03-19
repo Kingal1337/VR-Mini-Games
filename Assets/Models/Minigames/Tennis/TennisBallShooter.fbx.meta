@@ -3,7 +3,27 @@ guid: 34bda1dd5ac8344448ef38c604e76b89
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Farmingdale Logo
+    second: {fileID: 2100000, guid: 89745a6ed75463745a97e8de9796e4c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green
+    second: {fileID: 2100000, guid: 6672515024c035f44852410a87930e28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: 0bd9d43b50e1d6c45bde8bb2d12e54a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White.002
+    second: {fileID: 2100000, guid: 6de8eae8cc5ba544abac5751bf66db16, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

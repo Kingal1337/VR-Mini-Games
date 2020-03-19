@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -8848810374240701247, guid: 34bda1dd5ac8344448ef38c604e76b89, type: 3}
+  - {fileID: 2100000, guid: b9c0704cc8a3d7240b38cedd8afb8577, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -198,9 +198,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2505642851634945670, guid: 34bda1dd5ac8344448ef38c604e76b89, type: 3}
-  - {fileID: -8848810374240701247, guid: 34bda1dd5ac8344448ef38c604e76b89, type: 3}
-  - {fileID: 6510456315266983557, guid: 34bda1dd5ac8344448ef38c604e76b89, type: 3}
+  - {fileID: 2100000, guid: dbf0e69b60f1fd843bfbee5a98581143, type: 2}
+  - {fileID: 2100000, guid: b9c0704cc8a3d7240b38cedd8afb8577, type: 2}
+  - {fileID: 2100000, guid: 89745a6ed75463745a97e8de9796e4c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -384,7 +384,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8442957057975247127, guid: 34bda1dd5ac8344448ef38c604e76b89, type: 3}
+  - {fileID: 2100000, guid: b9c0704cc8a3d7240b38cedd8afb8577, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -455,8 +455,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06afcdfb50ca97b46be9bc835453403c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeToReload: 2
   isOn: 1
-  timeTillShoot: 2
+  minTimeToShoot: 2
+  maxTimeToShoot: 5
   force: 600
   playArea: {fileID: 1865202705005411547}
   tennisBallOrigin: {fileID: 1865202704162065036}

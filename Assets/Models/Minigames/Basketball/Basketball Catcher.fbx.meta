@@ -3,7 +3,42 @@ guid: ab7dad4b04a1fd34b9ef03a98b6213da
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Basic FSC Logo
+    second: {fileID: 2100000, guid: d61abcadf62ed5b47b13ce7956a41a31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Farmingdale Logo
+    second: {fileID: 2100000, guid: 89745a6ed75463745a97e8de9796e4c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 72a808e44d5a08f419d16c850d401739, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green
+    second: {fileID: 2100000, guid: dbf0e69b60f1fd843bfbee5a98581143, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hoop Orange
+    second: {fileID: 2100000, guid: f2235e38e713bc044ae2211dbaa103ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hoop Red
+    second: {fileID: 2100000, guid: e2543c557d419824eb59b818c083ea57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: b9c0704cc8a3d7240b38cedd8afb8577, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
