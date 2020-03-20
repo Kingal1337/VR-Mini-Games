@@ -331,5 +331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb10c3c7647e1eb4a8a679dc60af7954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseColor: {r: 0.7764706, g: 0.16078432, b: 0.050980393, a: 0}
   outlineColor: {r: 1, g: 0.8, b: 0.21568628, a: 1}
-  outlineWidth: 0.1
+  outlineWidth: 1
