@@ -10,7 +10,16 @@ public class PlayObject : MonoBehaviour
     public bool resetVelocity = true;
     
     [Tooltip("If the object is out of bounds or not")]
-    public bool outOfBounds;
+    private bool outOfBounds;
+    public bool OutOfBounds {
+        get { return outOfBounds; }
+        set { 
+            outOfBounds = value;
+            if (playArea != null) {
+                playArea.updateObjectInBounds(this);
+            }
+        }
+    }
 
     [Tooltip("How the the object has been out of bounds")]
     public float timeOutOfBounds = 0;

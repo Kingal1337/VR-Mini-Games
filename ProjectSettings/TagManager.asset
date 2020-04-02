@@ -15,10 +15,10 @@ TagManager:
   - 
   - Ground
   - Interactable Object
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - PostProcessing
+  - Hands
+  - Hand Interactable
   - 
   - 
   - 
