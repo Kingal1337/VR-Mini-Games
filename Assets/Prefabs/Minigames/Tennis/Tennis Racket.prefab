@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 2666849951434634645}
   - component: {fileID: 3245218385516530497}
   - component: {fileID: 2700067018265155209}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tennis Racket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   minSpeed: 2
-  maxSpeed: 30
+  maxSpeed: 10
 --- !u!114 &2700067018265155209
 MonoBehaviour:
   m_ObjectHideFlags: 0

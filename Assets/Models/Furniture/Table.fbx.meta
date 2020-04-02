@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Table Texture
     second: {fileID: 2100000, guid: 7e637af152cf88e4c9d9ed8379c31ee9, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Table Texture
+    second: {fileID: 2800000, guid: 8111086ab12c72a44895c9c968e4a276, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
