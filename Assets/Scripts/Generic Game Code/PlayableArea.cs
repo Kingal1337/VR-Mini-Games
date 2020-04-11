@@ -21,11 +21,14 @@ public class PlayableArea : MonoBehaviour {
         }
     }
 
+    [Tooltip("If set to true, the PlayObject will return to the closest teleport location")]
+    public bool returnToClosestTeleportLocation;
+
     [Tooltip("The time objects can stay outside of the Play Area before they are teleported back to the playarea. (In Seconds)")]
     public float outOfBoundsTime = 2f;
 
     [Tooltip("Where the objects will teleport to if they are out of bounds")]
-    public Transform teleportLocation;
+    public List<Transform> teleportLocationList;
 
     // Start is called before the first frame update
     void Start()
@@ -74,7 +77,22 @@ public class PlayableArea : MonoBehaviour {
 
     public void teleportPlayObject(PlayObject playObject) {
         if (objects.Contains(playObject)) {
-            playObject.transform.position = teleportLocation.position;
+            if (returnToClosestTeleportLocation) {
+                Transform closest = teleportLocationList[0];
+                float distance = Vector3.Distance(playObject.transform.position, closest.position);
+                foreach (Transform location in teleportLocationList) {
+                    float tempDistance;
+                    if ((tempDistance  = Vector3.Distance(playObject.transform.position, location.position)) < distance) {
+                        closest = location;
+                        distance = tempDistance;
+                    }
+                }
+                playObject.transform.position = closest.position;
+            }
+            else {
+                playObject.transform.position = teleportLocationList[0].position;
+            }
+            
         }
     }
 }

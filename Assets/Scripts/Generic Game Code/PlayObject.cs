@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayObject : MonoBehaviour
 {
     public PlayableArea playArea;
-
+    
     [Tooltip("If set to true, the velocity of the object will be reset, before the object will teleport")]
     public bool resetVelocity = true;
     

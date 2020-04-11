@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainGameDemo.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: eeb520f0410205c43a5417fd4feb4bbf
+  - enabled: 1
+    path: Assets/Scenes/Tennis.unity
+    guid: 3f76aec665eaeff439e6d3293ac579b7
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 7c9950f93d64eb64496c53e038580456,
       type: 2}
