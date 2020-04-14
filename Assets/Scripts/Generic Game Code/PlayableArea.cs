@@ -21,6 +21,9 @@ public class PlayableArea : MonoBehaviour {
         }
     }
 
+    [Tooltip("Any extra colliders that are a child of the main play area")]
+    public List<PlayableAreaCollider> extraColliders = new List<PlayableAreaCollider>();
+
     [Tooltip("If set to true, the PlayObject will return to the closest teleport location")]
     public bool returnToClosestTeleportLocation;
 
@@ -33,14 +36,41 @@ public class PlayableArea : MonoBehaviour {
     // Start is called before the first frame update
     void Start()
     {
-        foreach (Transform child in parentOfAllPlayObjects.transform) {
-            GameObject gameObject = child.gameObject;
-            PlayObject playObject = gameObject.GetComponent<PlayObject>();
-            if (playObject != null && playObject.gameObject.activeSelf) {
-                if (!objects.Contains(playObject)) {
-                    objects.Add(playObject);
-                    updateObjectInBounds(playObject);
+        if (parentOfAllPlayObjects != null) {
+            foreach (Transform child in parentOfAllPlayObjects.transform) {//finds all play objects
+                GameObject gameObject = child.gameObject;
+                PlayObject playObject = gameObject.GetComponent<PlayObject>();
+                if (playObject != null && playObject.gameObject.activeSelf) {
+                    if (!objects.Contains(playObject)) {
+                        objects.Add(playObject);
+                        updateObjectInBounds(playObject);
+                    }
                 }
+            }
+        }
+
+        PlayableAreaCollider thisCollider = GetComponent<PlayableAreaCollider>();
+        if (thisCollider != null && thisCollider.gameObject.activeSelf) {
+            extraColliders.Add(thisCollider);
+        }
+
+        foreach (Transform child in transform) {//gets all the PlayableAreaCollider child objects
+            GameObject gameObject = child.gameObject;
+            PlayableAreaCollider areaColliders = gameObject.GetComponent<PlayableAreaCollider>();
+            if (areaColliders != null && areaColliders.gameObject.activeSelf) {
+                extraColliders.Add(areaColliders);
+            }
+        }
+    }
+
+    public void CheckAllColliders() {
+        foreach (PlayObject playObject in objects) {
+            if (playObject.currentlyIn.Count != 0) {
+                playObject.OutOfBounds = false;
+                playObject.timeOutOfBounds = 0;
+            }
+            else {
+                playObject.OutOfBounds = true;
             }
         }
     }
@@ -56,24 +86,24 @@ public class PlayableArea : MonoBehaviour {
         }
     }
 
-    void OnTriggerEnter(Collider collider) {
-        PlayObject playObject = collider.gameObject.GetComponent<PlayObject>();
-        if (playObject != null) {
-            if (objects.Contains(playObject)) {
-                playObject.OutOfBounds = false;
-                playObject.timeOutOfBounds = 0;
-            }
-        }
-    }
+    //void OnTriggerEnter(Collider collider) {
+    //    PlayObject playObject = collider.gameObject.GetComponent<PlayObject>();
+    //    if (playObject != null) {
+    //        if (objects.Contains(playObject)) {
+    //            playObject.OutOfBounds = false;
+    //            playObject.timeOutOfBounds = 0;
+    //        }
+    //    }
+    //}
 
-    void OnTriggerExit(Collider collider) {
-        PlayObject playObject = collider.gameObject.GetComponent<PlayObject>();
-        if (playObject != null) {
-            if (objects.Contains(playObject)) {
-                playObject.OutOfBounds = true;
-            }
-        }
-    }
+    //void OnTriggerExit(Collider collider) {
+    //    PlayObject playObject = collider.gameObject.GetComponent<PlayObject>();
+    //    if (playObject != null) {
+    //        if (objects.Contains(playObject)) {
+    //            playObject.OutOfBounds = true;
+    //        }
+    //    }
+    //}
 
     public void teleportPlayObject(PlayObject playObject) {
         if (objects.Contains(playObject)) {
@@ -94,5 +124,12 @@ public class PlayableArea : MonoBehaviour {
             }
             
         }
+    }
+
+    public bool IsMyObject(PlayObject playObject) {//Checks if a play object belongs to this PlayableArea
+        if (objects.Contains(playObject)) {
+            return true;
+        }
+        return false;
     }
 }

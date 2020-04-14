@@ -276,6 +276,7 @@ GameObject:
   - component: {fileID: 1865202705005411549}
   - component: {fileID: 1865202705005411546}
   - component: {fileID: 1865202705005411547}
+  - component: {fileID: 3952113056408629315}
   m_Layer: 0
   m_Name: TennisBallPlayArea
   m_TagString: Untagged
@@ -324,8 +325,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objects: []
   parentOfAllPlayObjects: {fileID: 6818608156156345020}
+  extraColliders: []
+  returnToClosestTeleportLocation: 0
   outOfBoundsTime: 10
-  teleportLocation: {fileID: 1865202704405465953}
+  teleportLocationList:
+  - {fileID: 1865202704405465953}
+--- !u!114 &3952113056408629315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865202705005411548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40462f4fc434f064c9693fbeff369932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playArea: {fileID: 1865202705005411547}
 --- !u!1 &1865202705327055696
 GameObject:
   m_ObjectHideFlags: 0
