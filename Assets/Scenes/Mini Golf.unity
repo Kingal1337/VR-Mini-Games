@@ -10692,6 +10692,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goal
       objectReference: {fileID: 0}
+    - target: {fileID: 107314, guid: a293b09709959144982b3503355316b1, type: 3}
+      propertyPath: m_TagString
+      value: Goal
+      objectReference: {fileID: 0}
     - target: {fileID: 477406, guid: a293b09709959144982b3503355316b1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.1390004
@@ -10744,27 +10748,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 634612516}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &634612518 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 107314, guid: a293b09709959144982b3503355316b1,
-    type: 3}
-  m_PrefabInstance: {fileID: 634612516}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &634612519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 634612518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ecee1f6a8110c741818c047e0e33779, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GolfBall: {fileID: 2013132569}
-  CourseFlag: {fileID: 529106955}
-  flagSpeed: 1
 --- !u!1001 &638676681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11609,7 +11592,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697934842}
-  m_Text: 0
+  m_Text: 6
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -12900,7 +12883,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796023012}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.5606675, y: 3.02, z: 13.442734}
+  m_LocalPosition: {x: 5.5606675, y: 3.02, z: 17.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1804008599}
@@ -13448,6 +13431,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 870410677}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &870410679 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1776509383497310, guid: f257571186036ae4a8645fd475847bf4,
+    type: 3}
+  m_PrefabInstance: {fileID: 870410677}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &870410680
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870410679}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.00155303, y: 0.010877495, z: 0.3412965}
+  m_Center: {x: 0.000031638145, y: 0.005438747, z: -0.16999811}
 --- !u!1 &874862507
 GameObject:
   m_ObjectHideFlags: 0
@@ -14412,6 +14414,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 926195761}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &926195763 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1776509383497310, guid: f257571186036ae4a8645fd475847bf4,
+    type: 3}
+  m_PrefabInstance: {fileID: 926195761}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &926195764
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926195763}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.24259189, y: 0.010877494, z: 0.0014392661}
+  m_Center: {x: 0.12064592, y: 0.005438748, z: 0.000009794011}
 --- !u!1 &936605468
 GameObject:
   m_ObjectHideFlags: 0
@@ -15005,6 +15026,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 968673952}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &968673954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1776509383497310, guid: f257571186036ae4a8645fd475847bf4,
+    type: 3}
+  m_PrefabInstance: {fileID: 968673952}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &968673955
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968673954}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0015387344, y: 0.010877495, z: 0.3412957}
+  m_Center: {x: -0.0000018024072, y: 0.0054387474, z: 0.16999778}
 --- !u!1001 &972983334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17224,6 +17264,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4212102942019401975, guid: 77c34a5160834b6409c8a6af11b5126d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Goal
+      objectReference: {fileID: 0}
     - target: {fileID: 8262815449182908686, guid: 77c34a5160834b6409c8a6af11b5126d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -17237,7 +17282,7 @@ PrefabInstance:
     - target: {fileID: 8706192509091881293, guid: 77c34a5160834b6409c8a6af11b5126d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.003
       objectReference: {fileID: 0}
     - target: {fileID: 8706192509091881293, guid: 77c34a5160834b6409c8a6af11b5126d,
         type: 3}
@@ -18108,7 +18153,7 @@ GameObject:
   - component: {fileID: 1217506655}
   - component: {fileID: 1217506654}
   m_Layer: 0
-  m_Name: Course 1Player Hits Text
+  m_Name: Course 1 Player Hits Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20906,7 +20951,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403923948}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.08199978, y: -0.76100016, z: 0}
+  m_LocalPosition: {x: -0.245, y: -0.76100016, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 575534671}
@@ -20920,7 +20965,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403923948}
-  m_Text: 0
+  m_Text: 100
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -21135,7 +21180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4467394157264018, guid: f717f04b66b262b49b43d16ddb24db44, type: 3}
       propertyPath: m_RootOrder
-      value: 131
+      value: 54
       objectReference: {fileID: 0}
     - target: {fileID: 4467394157264018, guid: f717f04b66b262b49b43d16ddb24db44, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21167,7 +21212,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4467394157264018, guid: f717f04b66b262b49b43d16ddb24db44, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23.427
+      value: 23.2742
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467394157264018, guid: f717f04b66b262b49b43d16ddb24db44, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 83.89
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f717f04b66b262b49b43d16ddb24db44, type: 3}
@@ -22077,27 +22126,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playArea: {fileID: 379540002}
---- !u!1 &1516690954 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4212102942019401975, guid: 77c34a5160834b6409c8a6af11b5126d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1107529885}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1516690955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1516690954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ecee1f6a8110c741818c047e0e33779, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GolfBall: {fileID: 2062752117}
-  CourseFlag: {fileID: 1765934554}
-  flagSpeed: 1
 --- !u!1 &1523431796
 GameObject:
   m_ObjectHideFlags: 0
@@ -22138,7 +22166,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523431796}
-  m_Text: 0
+  m_Text: 7
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -23784,6 +23812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goal - mesh_TrackGrassHole_02_Hole
       objectReference: {fileID: 0}
+    - target: {fileID: 100752, guid: 3268850436dcebe45a6796b815f3141f, type: 3}
+      propertyPath: m_TagString
+      value: Goal
+      objectReference: {fileID: 0}
     - target: {fileID: 135256, guid: 3268850436dcebe45a6796b815f3141f, type: 3}
       propertyPath: m_Name
       value: pref_TrackGrassHole_02
@@ -23855,7 +23887,8 @@ PrefabInstance:
       propertyPath: GolfBall
       value: 
       objectReference: {fileID: 2505277746122702067}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1577866419124527578, guid: 3268850436dcebe45a6796b815f3141f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3268850436dcebe45a6796b815f3141f, type: 3}
 --- !u!4 &1632974720 stripped
 Transform:
@@ -26304,7 +26337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741608142}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.08199978, y: -0.26100016, z: 0}
+  m_LocalPosition: {x: -0.24499989, y: -0.26100016, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 575534671}
@@ -26318,7 +26351,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741608142}
-  m_Text: 0
+  m_Text: 100
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -26973,9 +27006,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1785255503}
-  m_Text: '0
-
-'
+  m_Text: 10
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -29219,7 +29250,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949696237}
-  m_Text: '  Ideal
+  m_Text: '  Max
 
     Strikes'
   m_OffsetZ: 0
@@ -30433,9 +30464,10 @@ GameObject:
   - component: {fileID: 2013132572}
   - component: {fileID: 2013132571}
   - component: {fileID: 2013132578}
+  - component: {fileID: 2013132579}
   m_Layer: 9
   m_Name: Golf Ball (3)
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30448,7 +30480,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013132569}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.78, y: -0.07967913, z: 4.179}
+  m_LocalPosition: {x: 2.654, y: -0.07967913, z: 4.179}
   m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
   m_Children: []
   m_Father: {fileID: 273720708}
@@ -30738,6 +30770,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb10c3c7647e1eb4a8a679dc60af7954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2013132579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013132569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecee1f6a8110c741818c047e0e33779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GolfBall: {fileID: 2013132569}
+  CourseFlag: {fileID: 529106955}
+  courseScore: {fileID: 2111993362}
+  courseMaxHits: {fileID: 1785255505}
+  coursePlayerHits: {fileID: 693375681}
+  courseScoreAmount: 100
+  courseMaxHitsAmount: 10
+  coursePlayerHitsAmount: 0
+  flagSpeed: 5
+  maxFlagHeight: 100
 --- !u!1001 &2015209041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31844,9 +31898,10 @@ GameObject:
   - component: {fileID: 2062752119}
   - component: {fileID: 2062752120}
   - component: {fileID: 2062752126}
+  - component: {fileID: 2062752127}
   m_Layer: 9
   m_Name: Golf Ball (1)
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31859,7 +31914,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062752117}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.387, y: -1.906, z: 7.865}
+  m_LocalPosition: {x: -9.387, y: -1.906, z: 7.8623}
   m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
   m_Children: []
   m_Father: {fileID: 957576906}
@@ -32149,6 +32204,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb10c3c7647e1eb4a8a679dc60af7954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2062752127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062752117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecee1f6a8110c741818c047e0e33779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GolfBall: {fileID: 2062752117}
+  CourseFlag: {fileID: 1765934554}
+  courseScore: {fileID: 1741608144}
+  courseMaxHits: {fileID: 697934844}
+  coursePlayerHits: {fileID: 1217506654}
+  courseScoreAmount: 100
+  courseMaxHitsAmount: 6
+  coursePlayerHitsAmount: 0
+  flagSpeed: 5
+  maxFlagHeight: 100
 --- !u!1001 &2063642816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33017,7 +33094,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111993360}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.08199978, y: -1.2610002, z: 0}
+  m_LocalPosition: {x: -0.24499989, y: -1.2610002, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 575534671}
@@ -33031,9 +33108,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111993360}
-  m_Text: '0
-
-'
+  m_Text: 100
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -33260,6 +33335,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2119606804}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2119606806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1776509383497310, guid: f257571186036ae4a8645fd475847bf4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2119606804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2119606807
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119606806}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.24255876, y: 0.010877494, z: 0.001422863}
+  m_Center: {x: -0.12062938, y: 0.005438748, z: -0.00001137752}
 --- !u!1001 &2134431655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33717,6 +33811,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Golf Club
       objectReference: {fileID: 0}
+    - target: {fileID: 3883088181198834854, guid: 9e0d0781ac1a13d499bf2d69f39288ea,
+        type: 3}
+      propertyPath: m_TagString
+      value: Club
+      objectReference: {fileID: 0}
     - target: {fileID: 4312843814566070288, guid: 9e0d0781ac1a13d499bf2d69f39288ea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33811,9 +33910,10 @@ GameObject:
   - component: {fileID: 217500861}
   - component: {fileID: 2505277746122702074}
   - component: {fileID: 2505277746122702075}
+  - component: {fileID: 2505277746122702076}
   m_Layer: 9
   m_Name: Golf Ball (2)
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34100,3 +34200,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb10c3c7647e1eb4a8a679dc60af7954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2505277746122702076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2505277746122702067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecee1f6a8110c741818c047e0e33779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GolfBall: {fileID: 2505277746122702067}
+  CourseFlag: {fileID: 1074517911}
+  courseScore: {fileID: 1403923950}
+  courseMaxHits: {fileID: 1523431798}
+  coursePlayerHits: {fileID: 401389256}
+  courseScoreAmount: 100
+  courseMaxHitsAmount: 7
+  coursePlayerHitsAmount: 0
+  flagSpeed: 5
+  maxFlagHeight: 100
