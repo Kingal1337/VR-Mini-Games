@@ -10,22 +10,26 @@ public class Goal : MonoBehaviour {
     public GameObject GolfBall;   //Set the golf ball for this course.  
     public GameObject CourseFlag; //Set the flag for this course.  
 
-    public TextMesh courseScore;       //Set the scoreboard up for this course.//
-    public TextMesh courseMaxHits;     //////////////////////////////////////////
-    public TextMesh coursePlayerHits;  //////////////////////////////////////////
+    public TextMesh courseScore;      //Set the scoreboard up for this course.//
+    public TextMesh courseMaxHits;    //////////////////////////////////////////
+    public TextMesh coursePlayerHits; //////////////////////////////////////////
     
     private Vector3 ballOriginalPosition; //Set the golf ball's original position.
 
     public int courseScoreAmount;      //Used to set and adjust individual course values in the editor.// 
     public int courseMaxHitsAmount;    ////////////////////////////////////////////////////////////////// 
-    public int coursePlayerHitsAmount; //////////////////////////////////////////////////////////////////
+    public float coursePlayerHitsAmount; //////////////////////////////////////////////////////////////////
 
     public float flagSpeed;               //The speed at which the flag moves.  
     public int maxFlagHeight;             //The maximum height the flag can move to on the Y axis.
     private bool moveFlag = false;        //Flag will NOT move by default.  
     private Vector3 flagOriginalPosition; //Save the flag's original position. 
 
+    private bool canHit = true;    //Use to check if the ball has been hit by the club.//  
+    private float hitTimer = 0.25f; //Counter to hold when the ball can be hit again.////
+
     void Start() {
+            print("hitTimer in Start = " + hitTimer);
         courseScore.text = courseScoreAmount.ToString();           //Set the text on the scoreboard.// 
         courseMaxHits.text = courseMaxHitsAmount.ToString();       ///////////////////////////////////
         coursePlayerHits.text = coursePlayerHitsAmount.ToString(); ///////////////////////////////////
@@ -38,28 +42,45 @@ public class Goal : MonoBehaviour {
     }
 
     void Update() { 
+        print("hitTimer in Update before If = " + hitTimer);
+
+        if (canHit == false) { //If the player hit the ball... 
+            hitTimer -= Time.deltaTime; //... Run the timer.  
+
+            print("hitTimer in Update after If = " + hitTimer);
+
+            if (hitTimer < 0) { //If the timer is below 0...
+                hitTimer = 0;   //... Reset the timer... 
+                canHit = true;  //... And stop the timer, and allow the ball to be hit again.   
+            }
+        }
+
         flagMovement(); 
     } 
 
-    //If this object collides with the golf hole then do the following...
+    //If this object collides with the golf hole then do the following... 
     void OnTriggerEnter(Collider collider) { 
-        if (collider.gameObject.tag == "Goal") { //On collision with the goal...
+        if (collider.gameObject.tag == "Goal") { //On collision with the goal... 
 
             moveFlag = true;  
+
             GolfBall.transform.position = ballOriginalPosition; //Move ball back to its original position.  
         }
     }
 
-    //Check if the golf club hits the ball.  
+    //Check if the golf club hits the ball.  //START COLLISION TIMER 
     void OnCollisionEnter(Collision collider) { 
         if (collider.gameObject.tag == "Club") { //On collision with golf ball...
-            print("REACHED GOLF BALL COLLISION");
+            print("REACHED GOLF BALL COLLISION"); 
 
-            //Increase the player hits and reflect the change on the board.  
-            coursePlayerHitsAmount += 1; 
-            coursePlayerHits.text = coursePlayerHitsAmount.ToString();
+            canHit = false; //Start the timer.  Stop accepting hits.  
+            print("canHit in Collision = " + canHit);
 
-            keepScore();
+            //Increase the player hit amount and add it to the score board.  
+            coursePlayerHitsAmount += 0.5f; 
+            coursePlayerHits.text = coursePlayerHitsAmount.ToString(); 
+
+            keepScore(); 
         }
     }
 
@@ -83,9 +104,13 @@ public class Goal : MonoBehaviour {
     }
 }
 
-/*
-Golf Ball Vector3 Positions: 
-- Golf Ball 1 = -9.387, -1.906, 7.865
-- Golf Ball 2 = -9.384852, -0.554, 6.418101
-- Golf Ball 3 = 2.6508, -0.07967913, 4.179
-*/
+/* 
+https://answers.unity.com/questions/897505/preventing-multiple-collisions-on-same-target.html
+
+https://forum.unity.com/threads/solved-detecting-a-constant-collision-over-x-amount-of-seconds.424701/ <- USING THIS ONE 
+*/ 
+
+//Collision timer in update 
+//Start the collision timer when player enters 
+//Check if the player is still at location, if they are increase 
+//If the player is not colliding reset our timer 
