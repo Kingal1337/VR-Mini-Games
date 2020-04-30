@@ -26,10 +26,9 @@ public class Goal : MonoBehaviour {
     private Vector3 flagOriginalPosition; //Save the flag's original position. 
 
     private bool canHit = true;    //Use to check if the ball has been hit by the club.//  
-    private float hitTimer = 0.25f; //Counter to hold when the ball can be hit again.////
+    private float hitTimer = 3;    //Counter to hold when the ball can be hit again.///// OTHER OPTIONS ARE .125, .25, 1, AND 3 
 
     void Start() {
-            print("hitTimer in Start = " + hitTimer);
         courseScore.text = courseScoreAmount.ToString();           //Set the text on the scoreboard.// 
         courseMaxHits.text = courseMaxHitsAmount.ToString();       ///////////////////////////////////
         coursePlayerHits.text = coursePlayerHitsAmount.ToString(); ///////////////////////////////////
@@ -42,16 +41,12 @@ public class Goal : MonoBehaviour {
     }
 
     void Update() { 
-        print("hitTimer in Update before If = " + hitTimer);
-
         if (canHit == false) { //If the player hit the ball... 
             hitTimer -= Time.deltaTime; //... Run the timer.  
 
-            print("hitTimer in Update after If = " + hitTimer);
-
             if (hitTimer < 0) { //If the timer is below 0...
-                hitTimer = 0;   //... Reset the timer... 
-                canHit = true;  //... And stop the timer, and allow the ball to be hit again.   
+                hitTimer = 3;   //... Reset the timer... 
+                canHit = true;  //... Then stop the timer, and allow the ball to be hit again.   
             }
         }
 
@@ -68,17 +63,15 @@ public class Goal : MonoBehaviour {
         }
     }
 
-    //Check if the golf club hits the ball.  //START COLLISION TIMER 
+    //Check if the golf club hits the ball.  
     void OnCollisionEnter(Collision collider) { 
-        if (collider.gameObject.tag == "Club") { //On collision with golf ball...
-            print("REACHED GOLF BALL COLLISION"); 
+        if (collider.gameObject.tag == "Club" && canHit == true) { //On collision with golf ball...
 
             canHit = false; //Start the timer.  Stop accepting hits.  
-            print("canHit in Collision = " + canHit);
 
-            //Increase the player hit amount and add it to the score board.  
-            coursePlayerHitsAmount += 0.5f; 
-            coursePlayerHits.text = coursePlayerHitsAmount.ToString(); 
+            coursePlayerHitsAmount += 1;
+
+            coursePlayerHits.text = coursePlayerHitsAmount.ToString(); //Once the math is done change the score.  
 
             keepScore(); 
         }
