@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/Scenes/Old_Menu.unity
     guid: eeb520f0410205c43a5417fd4feb4bbf
   - enabled: 1
     path: Assets/Scenes/MainGameDemo.unity
@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mini Golf.unity
     guid: fe8ba3b184567734296c6f94a23e7f3c
+  - enabled: 1
+    path: Assets/Imported Assets/Skeeball Assets/Scenes/Skii World.unity
+    guid: e24b035fcc4f1fd4694e5e739359bde5
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 7c9950f93d64eb64496c53e038580456,
       type: 2}

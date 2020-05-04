@@ -29193,7 +29193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40419faadc7979042976c1c83fbeca51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Menu
+  levelToLoad: Main Menu
 --- !u!1001 &1937451398
 PrefabInstance:
   m_ObjectHideFlags: 0
