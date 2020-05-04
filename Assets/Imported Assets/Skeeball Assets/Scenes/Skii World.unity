@@ -14973,7 +14973,7 @@ MonoBehaviour:
   isGameActive: 0
   secondGameOverCheck: 0
   randomSkiiballSpeeds: 1
-  timeLeft: 10
+  timeLeft: 60
   ballRolling: {fileID: 1307134062}
   ballRespawning: {fileID: 1194742415}
   arcadeSounds: {fileID: 748658200}
