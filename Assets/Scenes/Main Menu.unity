@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: d71de076c7d2301469d30b8982e144aa,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -752,6 +752,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1954661769457517011, guid: d27afcf9cb4a80c47a7621e15cda52d5,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954661769457517011, guid: d27afcf9cb4a80c47a7621e15cda52d5,
+        type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954661769457517011, guid: d27afcf9cb4a80c47a7621e15cda52d5,
+        type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954661769457517016, guid: d27afcf9cb4a80c47a7621e15cda52d5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2454882017441044405, guid: d27afcf9cb4a80c47a7621e15cda52d5,
+        type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2454882017441044405, guid: d27afcf9cb4a80c47a7621e15cda52d5,
+        type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2454882017441044405, guid: d27afcf9cb4a80c47a7621e15cda52d5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 758ad854f730f4c4da8b7c34c71de116, type: 2}
+    - target: {fileID: 3116203397093375958, guid: d27afcf9cb4a80c47a7621e15cda52d5,
+        type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4785622941107956224, guid: d27afcf9cb4a80c47a7621e15cda52d5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -812,8 +852,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basketball Game
       objectReference: {fileID: 0}
+    - target: {fileID: 6889159994942337619, guid: d27afcf9cb4a80c47a7621e15cda52d5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.208
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889159994942337619, guid: d27afcf9cb4a80c47a7621e15cda52d5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.283
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d27afcf9cb4a80c47a7621e15cda52d5, type: 3}
+--- !u!1 &849823808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1267782681525562529, guid: 1e52405e3b2320645bd26c25d9414a40,
+    type: 3}
+  m_PrefabInstance: {fileID: 2026611993}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &849823810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849823808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40419faadc7979042976c1c83fbeca51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToLoad: Fish Ball Scene
 --- !u!1001 &952363141
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1428,7 +1497,7 @@ PrefabInstance:
     - target: {fileID: 1267782681102724794, guid: 1e52405e3b2320645bd26c25d9414a40,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1267782681102724797, guid: 1e52405e3b2320645bd26c25d9414a40,
         type: 3}
@@ -1500,6 +1569,36 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1267782681525562537, guid: 1e52405e3b2320645bd26c25d9414a40,
+        type: 3}
+      propertyPath: oneButtonPress.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267782681525562537, guid: 1e52405e3b2320645bd26c25d9414a40,
+        type: 3}
+      propertyPath: oneButtonPress.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267782681525562537, guid: 1e52405e3b2320645bd26c25d9414a40,
+        type: 3}
+      propertyPath: oneButtonPress.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267782681525562537, guid: 1e52405e3b2320645bd26c25d9414a40,
+        type: 3}
+      propertyPath: oneButtonPress.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 849823810}
+    - target: {fileID: 1267782681525562537, guid: 1e52405e3b2320645bd26c25d9414a40,
+        type: 3}
+      propertyPath: oneButtonPress.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267782681525562537, guid: 1e52405e3b2320645bd26c25d9414a40,
+        type: 3}
+      propertyPath: oneButtonPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6879370289449962182, guid: 1e52405e3b2320645bd26c25d9414a40,
         type: 3}
       propertyPath: m_Mesh
@@ -1508,27 +1607,27 @@ PrefabInstance:
     - target: {fileID: 8698578165973542827, guid: 1e52405e3b2320645bd26c25d9414a40,
         type: 3}
       propertyPath: m_text
-      value: N/A
+      value: Fish Carnival Game
       objectReference: {fileID: 0}
     - target: {fileID: 8698578165973542827, guid: 1e52405e3b2320645bd26c25d9414a40,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 3
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8698578165973542827, guid: 1e52405e3b2320645bd26c25d9414a40,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8698578165973542827, guid: 1e52405e3b2320645bd26c25d9414a40,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8698578165973542827, guid: 1e52405e3b2320645bd26c25d9414a40,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8698578165973542827, guid: 1e52405e3b2320645bd26c25d9414a40,
         type: 3}
@@ -28383,7 +28482,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -710910164944623929, guid: 5dbf6e7cd3b43477c918ce80ed01cecd, type: 3}

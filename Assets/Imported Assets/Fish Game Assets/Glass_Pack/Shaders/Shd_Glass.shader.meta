@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 15a87cab827a3a5468998e06b00810fd
+timeCreated: 1445204414
+licenseType: Store
+ShaderImporter:
+  defaultTextures:
+  - _Refraction: {fileID: 2800000, guid: 08441b278d641a04b94c1448ed06ef82, type: 3}
+  - _Environment: {instanceID: 0}
+  userData: 
+  assetBundleName: pgsglasspack
+  assetBundleVariant: 
