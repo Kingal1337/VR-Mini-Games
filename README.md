@@ -1,13 +1,13 @@
 # VR Games
 
-A virtual reality game that contains a series of different minigames, which include tennis, basketball, mini-golf, etc. that was designed for Farmingdale State College's open house.
+A virtual reality festival built for Farmingdale State College’s open house!  The games included are tennis, basketball, mini-golf, skee-ball, and ping pong fishbowl.  The game is designed to be shared amongst friends and played for only two to five minutes each.  
 
 ## Getting Started
-These steps will help you get the project up and running on your machine
+These steps will help you get the project up and running on your machine:
 
 ### Prerequistes
 
-The things you will need in order to get this project up and running on your machine are
+The things you will need in order to get this project up and running on your machine are: 
 
 - Unity 2019.3.2f1 or Higher
 - Oculus Quest or Oculus Rift (Not Tested)
@@ -30,6 +30,6 @@ The things you will need in order to get this project up and running on your mac
 
 ## Authors
 - **Alan Tsui** - Lead Developer - [Github](https://www.github.com/Kingal1337)
-- **Doug Rysdyk** - Developer - [Github](https://github.com/DouglasRysdyk)
+- **Doug Rysdyk** - Manager - [Github](https://github.com/DouglasRysdyk)
 - **Eddie Marrero** - Developer - [Github](https://github.com/eddmarre)
 - **James D'amico** - Developer - [Github](https://github.com/JamesDamico)
